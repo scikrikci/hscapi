@@ -11,7 +11,7 @@ app.get('/', (req, res) => {
 
 
 app.use('/games', gamesRouter);
-app.use('/hsc-web-visits', hscWebVisitsRouter);
+app.use('/hsc-web-visit-count', hscWebVisitsRouter);
 
 
 app.listen(PORT, () => {
