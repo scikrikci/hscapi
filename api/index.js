@@ -1,5 +1,6 @@
 import express from "express";
 import gamesRouter from './routes/games.js';
+import hscWebVisitsRouter from './routes/hsc-web-visits.js';
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -10,6 +11,8 @@ app.get('/', (req, res) => {
 
 
 app.use('/games', gamesRouter);
+app.use('/hsc-web-visits', hscWebVisitsRouter);
+
 
 app.listen(PORT, () => {
     if (PORT === 3000) {
