@@ -1,6 +1,6 @@
-// greetings.js
-const getGreeting = () => {
-    return 'Hello World from greetings.js!';
-};
+function getGreeting() {
+    return "greet";
+}
 
-module.exports = getGreeting;
+
+export { getGreeting };
