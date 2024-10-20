@@ -1,0 +1,36 @@
+/node-modules
+
+# Node.js modülleri
+node_modules/
+
+# Çıktı dosyaları
+dist/
+build/
+
+# Geçici dosyalar
+tmp/
+temp/
+.cache/
+
+# Log dosyaları
+*.log
+
+# Çalışma dizini
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# IDE veya editör konfigürasyon dosyaları
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS spesifik dosyalar
+.DS_Store
+Thumbs.db
+
+# Test dosyaları
+coverage/
