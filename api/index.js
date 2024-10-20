@@ -1,6 +1,6 @@
 import express from "express";
 import gamesRouter from './routes/games.js';
-import hscWebVisitsRouter from './routes/hsc-web-visits.js';
+import hscWebVisitCountRouter from './routes/hsc-web-visit-count.js';
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -11,7 +11,7 @@ app.get('/', (req, res) => {
 
 
 app.use('/games', gamesRouter);
-app.use('/hsc-web-visit-count', hscWebVisitsRouter);
+app.use('/visit-count', hscWebVisitCountRouter);
 
 
 app.listen(PORT, () => {
