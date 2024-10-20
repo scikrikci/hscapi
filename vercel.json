@@ -8,7 +8,7 @@
     ],
     "routes": [
         {
-            "src": "/greet",
+            "src": "/games",
             "dest": "api/index.js"
         },
         {

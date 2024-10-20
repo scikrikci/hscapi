@@ -1,5 +1,4 @@
 import express from "express";
-import { getGreeting } from './greetings.js';
 import gamesRouter from './routes/games.js';
 
 const app = express();
@@ -9,9 +8,6 @@ app.get('/', (req, res) => {
     res.json(['Hello World!']);
 });
 
-app.get('/greet', (req, res) => {
-    res.json(getGreeting());
-});
 
 app.use('/games', gamesRouter);
 
